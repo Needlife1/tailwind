@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heder-link {
+    @apply dark:text-slate-200 text-gray-500 font-semibold inline-block py-3 px-2 border-b-2 border-transparent transition-all duration-300
+}
+
+.heder-link:hover {
+    @apply border-purple-800 text-purple-800 dark:text-purple-500;
+}
+
+.heder-link:focus {
+    @apply text-purple-800 dark:text-purple-500;
+}
+
+.heder-btn {
+    @apply py-1 px-3 border-2 rounded-full border-indigo-600 text-indigo-600 transition-all duration-300;
+}
+
+.heder-btn:hover {
+    @apply text-white bg-indigo-800 dark:border-indigo-500 dark:bg-indigo-500 dark:text-white;
+}
+
+.heder-btn:focus {
+    @apply outline-none ring ring-violet-300;
+}
+
+@layer components {
+    .pagination-item {
+        @apply inline-block py-1 px-3 border border-gray-300 text-gray-500 transition-all duration-300 dark:text-slate-400;
+    }
+
+    .pagination-item:hover {
+        @apply text-gray-700 bg-gray-100;
+    }
+}
+
+.footer-link {
+    @apply dark:text-slate-400 inline-block text-gray-500 px-2 transition-all duration-300;
+}
+
+.footer-link:hover {
+    @apply underline decoration-gray-500 underline-offset-2
+}
